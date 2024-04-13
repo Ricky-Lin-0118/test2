@@ -15,6 +15,7 @@
   <view wx:if="{{currentTab === 0}}">
     <view>
      <image src="../../image/丁真.jpg"></image>
+     <image src="../../image/牢宇.jpg"></image>
     </view>
   </view>
 
