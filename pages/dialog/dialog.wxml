@@ -1,0 +1,80 @@
+<!--pages/dialog/dialog.wxml-->
+
+<view class="button-container">
+    <view class="button" bindtap="switchToPage1">
+      <text class="button-text {{currentTab === 0 ? 'active' : ''}}">助手</text>
+    </view>
+    <view class="button" bindtap="switchToPage2">
+      <text class="button-text {{currentTab === 1 ? 'active' : ''}}">历史</text>
+    </view>
+</view>
+
+<!-- 页面内容 -->
+<scroll-view class="page-scroll" scroll-x="true" scroll-with-animation="{{true}}">
+  <!-- 页面1内容 -->
+  <view wx:if="{{currentTab === 0}}">
+    
+  </view>
+
+  <!-- 页面2内容 -->
+  <view wx:else>
+  <!-- 页面2的内容 -->
+  </view>
+</scroll-view>
+
+
+
+<view class="container">
+  <!-- 帖子框 -->
+  <view class="post-container">
+    <!-- 第一部分 -->
+    <view class="post-header">
+      <view class="header-left">
+        <view class="avatar">
+          <image class="avatar-image" src="../../image/牢宇.jpg"></image>
+        </view>
+        <view class="info">
+          <text class="name">牢宇</text>
+          <text class="time">32分钟前</text>
+        </view>
+      </view>
+      <view class="delete-icon" bindtap="deletePost">
+        <image class="delete-icon" src="../../icon/关闭.png" bindtap="deletePost"></image>
+      </view>
+    </view>
+
+    <!-- 第二部分 -->
+    <navigator url="../temp/temp1/temp1"> <!-- 设置跳转链接 -->
+      <view class="post-content">
+        <text class="title2">学习交流——共筑知识之桥</text>
+        <!-- 图片内容 -->
+        <view class="image-container">
+          <image class="content-image" src="../../image/丁真.jpg"></image>
+          <!-- 可以添加更多的图片 -->
+        </view>
+        <view class="content">
+          <text class="content">学习，是每个人成长道路上不可或缺的一部分。在这个信息爆炸的时代，如何高效学习、如何与他人进行有效的学习交流，已成为我们共同关注的焦点。今天，我愿意与大家分享···</text>
+        </view>
+      </view>
+    </navigator>
+
+    <!-- 第三部分 -->
+    <view class="post-footer">
+      <view class="footer-top">
+        <text class="tag">#学习交流</text>
+        <text class="viewers">223人围观</text>
+      </view>
+      <view class="footer-bottom">
+        <view class="actions">
+          <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+          <text class="like-count">45</text>
+          <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
+          <text class="comment-count">12</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

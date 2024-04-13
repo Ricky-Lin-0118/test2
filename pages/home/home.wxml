@@ -1,0 +1,316 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索框 -->
+<view class="search-container">
+  <input class="search-input" type="text" placeholder="情感困扰与关系问题" value="{{keyword}}" bindinput="handleInput"/>
+  <button class="search-btn" bindtap="handleSearch">搜索</button>
+</view>
+
+<!-- 滚动栏 -->
+<swiper class="swiper" indicator-dots=" " autoplay circular>
+  <swiper-item>
+    <image src="../../icon/刷新.png" class="img1"></image>
+  </swiper-item>
+  <swiper-item>item2</swiper-item>
+  <swiper-item>item3</swiper-item>
+</swiper>
+
+<!-- 主题图标&链接 -->
+<view class="icon-container">
+  <view class="icon-grid">
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon"  />
+      <text class="icon-text">情感</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">家庭</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon"  />
+      <text class="icon-text">学习</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">人际</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">职场</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon"  />
+      <text class="icon-text">成长</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">失眠</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon"  />
+      <text class="icon-text">规划</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">倾诉</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/搜索.png" class="icon" />
+      <text class="icon-text">其它</text>
+    </view>
+  </navigator>
+</view>
+</view>
+
+<!-- 倾听疏导 -->
+<view class="container1">
+  <view class="title">
+    <text class="title1">倾听疏导</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/牢康.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">牢马</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">高级心里咨询师，曾赴日本东京大学访学。访学期间，为500多名女学生及老师做过心理辅导，受到师生一致好评！</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags">婚恋 </text>
+        <text class="tags"> 情感 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/牢叶.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">牢叶</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">特级心里咨询师，叶天帝厕所科技有限公司创始人。</text>
+      </view>
+      <view>
+        <text class="tags"> 情感 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/牢帆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view>
+        <text class="name">牢帆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">高级心里咨询师，视觉中国签约摄影师，在Coser中广泛好评！</text>
+      </view>
+      <view>
+        <text class="tags">婚恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+    <navigator url="../market/market">更多倾听者</navigator>
+  </view>
+</view>
+
+<!-- 分析建议 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #b6e2e6, #ffffff 70%);">
+    <text class="title1" >分析建议</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/牢宇.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">牢宇</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">钛合只因</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags2">婚恋 </text>
+        <text class="tags2"> 情感 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/大力王.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">大力王</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">What is love？</text>
+      </view>
+      <view>
+        <text class="tags2"> 情感 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/丁真.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view>
+        <text class="name">丁真</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">妈妈生的</text>
+      </view>
+      <view>
+        <text class="tags2">婚恋</text>
+        <text class="tags2">银员丁真</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+   <navigator url="../market/market">更多分析者</navigator>
+  </view>
+</view>
+
+
+<!-- 热门咨询师 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #a5d1b3, #ffffff 80%); ">
+    <text class="title1" >热门咨询师</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <view class="top-label" style="background-color: red;">左上角标签</view>
+      <image src="../../image/桂林仔.jpg" class="avatar" />
+      <view class="bottom-label" style="background-color: green;">男 37岁</view>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">桂林仔 </text>
+        <text class="name" style="margin-left:20rpx;">情感分析师</text>
+      </view>
+      <view> 
+        <text class="duration">好评率：100%</text>
+        <text class="duration">服务时长：100小时</text>
+        <text class="duration">评论：1145条</text>
+      </view>
+      <view class="intro">
+        <text class="intro">男</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">未婚</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">时间差不多喽</text>
+      </view>
+      <!-- 便签不能弄两行，后续需要修改 -->
+      <view class="info-area1">
+        <text class="tags3" style="background-color: lightgrey; padding: 14rpx 12rpx;">桂林心理情感工作室</text>
+        <text class="tags3">圣杯 </text>
+        <text class="tags3">情感修复 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/尊者.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">尊者</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">你恨过天吗？恨过地吗？</text>
+      </view>
+      <view>
+        <text class="tags3"> 新造的人 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/牢大.jpg" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view>
+        <text class="name">牢大</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">What can I say</text>
+      </view>
+      <view>
+        <text class="tags3">黑曼巴</text>
+        <text class="tags3">24</text>
+      </view>
+    </view>
+  </navigator>
+  <view class="area">
+    <view class="avatar-area">
+      <navigator url="../market/market" class="area">
+      <image src="../../image/牢宇.jpg" class="avatar" />
+      </navigator>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">牢宇</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">钛合只因</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags2">婚恋 </text>
+        <text class="tags2"> 情感 </text>
+      </view>
+    </view>
+  </view>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+   <navigator url="../market/market">更多咨询师</navigator>
+  </view>
+</view>
+
