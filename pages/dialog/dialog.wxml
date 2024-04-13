@@ -13,7 +13,9 @@
 <scroll-view class="page-scroll" scroll-x="true" scroll-with-animation="{{true}}">
   <!-- 页面1内容 -->
   <view wx:if="{{currentTab === 0}}">
-    
+    <view>
+     <image src="../../image/丁真.jpg"></image>
+    </view>
   </view>
 
   <!-- 页面2内容 -->
